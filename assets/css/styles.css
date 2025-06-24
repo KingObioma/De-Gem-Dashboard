@@ -1,3 +1,11 @@
+.blue-bg{background-color: #1A73E8;}
+.green-bg{background-color: #43A047;}
+.green   { color: #4caf50; }
+.red     { color: #e91e63; }
+.blue    { color: #2196f3; }
+.orange  { color: #ff9800; }
+.pink    { color: #ec407a; }
+.dark    { color: #212121; }
 
 body{
   background-color: #f5f5f5;
@@ -5,7 +13,6 @@ body{
   padding: 7px;
   font-family: "Inter", sans-serif;  
   font-size: 14px; 
-  height: 2000px;   
 }
 .layoutWrapper{
   display: flex;
@@ -17,23 +24,21 @@ body{
 /* NavBar begins */
 
 nav{
-  background-color: #f5f5f5;
-  padding: 5px 30px ;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 15px;
-  /* box-shadow: 0 4px 6px rgba(153, 152, 152, 0.1); */
   width: 100%;
+  display: flex;
+  padding: 5px 30px;
   margin-left: 230px;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  justify-content: space-between;
+  /* box-shadow: 0 4px 6px rgba(153, 152, 152, 0.1); */
 }
 .first-section{
   color: gray;
   letter-spacing: 0.05rem;
 }
-.active{
-  color: black;
-}
+.active{color: black;}
 .second-section{
   display: flex;
   align-items: center;
@@ -45,7 +50,6 @@ nav{
 }
 .input-wrapper input{
   border: 1px solid #d2d6da;
-  height: 17px;
   width: 100%;
   padding: 10px;
   border-radius: 7px;  
@@ -143,9 +147,7 @@ nav{
   text-decoration: none;
   color: black;
 }
-.top-sidebar{
-  height: 380px;
-}
+.top-sidebar{height: 380px;}
 .logo-container{
   display: flex;
   align-items: center;
@@ -154,9 +156,7 @@ nav{
   padding: 12px;
   font-size: 14px;
 }
-.logo-name{
-  margin-left: 10px;
-}
+.logo-name{margin-left: 10px;}
 .sidebar-links{
   list-style: none;
   padding: 0px;  
@@ -210,9 +210,7 @@ nav{
   font-size: 14px;
   transition: 0.2s;
 }
-.documentation:hover{
- color: rgb(99, 99, 99);
-}
+.documentation:hover{color: rgb(99, 99, 99);}
 .Upgrade-btn{
   width: 100%;
   background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
@@ -327,9 +325,7 @@ nav{
   margin-bottom: 15px;
   padding-bottom: 20px;
 }
-.chart-card .bottom-card{
-  color: #737373;
-}
+.chart-card .bottom-card{color: #737373;}
 .chart-text{
   font-size: 16px;
   font-weight: 600;
@@ -340,15 +336,12 @@ nav{
   margin-top: 5px;
   margin-bottom: 25px;
 }
-.bold-span{
-  font-weight: 600;
-}
+.bold-span{font-weight: 600;}
 .activity{
   display: flex;
   justify-content: space-between;
 }
 .projects{
-  height: 483.5px;
   background-color: white;
   width: 68%;
   margin-right: 27px;
@@ -356,9 +349,7 @@ nav{
   box-shadow: 0px 4px 5px rgba(153, 152, 152, 0.2);
   cursor: pointer;
 }
-.projects-header{
-  padding: 15px 10px 5px 17px;
-}
+.projects-header{padding: 15px 10px 5px 17px;}
 .project-text{
   font-size: 16px;
   font-weight: 600;
@@ -370,7 +361,6 @@ nav{
 }
 .orders{
   width: 30%;
-  height: 500px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 5px rgba(153, 152, 152, 0.2);
@@ -405,19 +395,16 @@ td{
   display: flex;
   gap: 15px;
   align-items: center;
+  font-weight: 500;
 }
-.table-logo{
-  width: 40px;
-}
+.table-logo{width: 40px;}
 .team-image{
   width: 20px;
   border-radius: 15px;
   margin-left: -13px;
   border: 2px solid white;
 }
-.team-image:first-child {
-  margin-left: 10px;
-}
+.team-image:first-child {margin-left: 10px;}
 .budget{
   padding: 0px 22px;
   color: #737373;
@@ -440,9 +427,65 @@ td{
   height: 100%;
   border-radius: 5px;
 }
-.blue{
-  background-color: #1A73E8;
+.orders-bottom{padding: 3px 5px 0px 3px;}
+.order-paragraph{
+  padding: 0px 0px 20px 40px;
+  position: relative;
 }
-.green{
-  background-color: #43A047;
+.order-paragraph::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: -20px;
+  width: 2px;
+  background: #e0e0e0;
+}
+.order-paragraph:last-child::before {
+  bottom: 0px;
+}
+.order-title{
+  margin: 0px 0px 4px 0px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #262626;
+}
+.subtitle{
+  font-weight: 600;
+  font-size: 12px;
+  color: #737373;
+  margin: 0px;
+}
+.event-icon{
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
+}
+.bell{
+  left: 7px;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px 10px 0px;
+}
+footer p{
+  color: #737373;
+}
+footer a{
+  color: #737373;
+  text-decoration: none;
+}
+footer span{
+  color: black;
+  font-weight: 600;
+}
+.bottom-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
 }
