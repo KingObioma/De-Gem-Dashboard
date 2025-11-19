@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Animated Sidebar with Hamburger</title>
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden; /* prevent scroll on sidebar show */
+  }
+
+  /* Hamburger Button */
+  #hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    max-width: 80%;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Optional backdrop overlay for pro feel */
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Sample content */
+  .content {
+    padding: 50px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Hamburger -->
+<button id="hamburger">☰</button>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <h3>Sidebar</h3>
+  <p>Navigation links here.</p>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Main Content -->
+<div class="content">
+  <h1>Welcome to the Page</h1>
+  <p>Click the hamburger to open the sidebar with animation.</p>
+</div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+
+  function openSidebar() {
+    sidebar.classList.add('show');
+    overlay.classList.add('show');
+  }
+
+  function closeSidebar() {
+    sidebar.classList.remove('show');
+    overlay.classList.remove('show');
+  }
+
+  hamburger.addEventListener('click', openSidebar);
+  overlay.addEventListener('click', closeSidebar);
+</script>
+
+</body>
+</html>

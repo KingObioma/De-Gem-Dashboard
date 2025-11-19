@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickAid Dashboard</title>
+    <link rel="stylesheet" href="assets/css/sign-in.css">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
+    <!--Font Awesome CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="mask"></span>
+        <nav class="auth-nav">
+            <section class="first-section">
+                <h2>Material Dashboard 3</h2>
+                <div class="hamburger-section">
+                    <button class="hamburger" id="hamburger-js">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect y="2" width="20" height="2" fill="#555"/>
+                            <rect y="8" width="20" height="2" fill="#555"/>
+                            <rect y="14" width="20" height="2" fill="#555"/>
+                        </svg>
+                    </button>
+                    <button class="close-nav-btn hide" id="close-nav-btn-js">                         
+                        <span class="close-nav" id="close-nav-js">&times;</span>
+                    </button>
+                </div>  
+            </section>
+            <section class="second-section hide" id="second-section-js">
+                <a href="index.html">Dashboard</a>
+                <a href="#">Profile</a>
+                <a href="sign-up.html">Sign Up</a>
+                <a href="sign-in.html">Sign In</a>
+            </section>    
+            <section class="third-section">
+                <div>
+                    <button class="online-builder">
+                        Online Builder
+                    </button>
+                </div>
+                <div>
+                    <button class="free-download">
+                        Free download
+                    </button>
+                </div>
+            </section>     
+        </nav>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Sign In</h1>
+        </div>
+        <div class="form-body">
+            <form action="#">
+                <div class="input-container">
+                    <input placeholder=" " type="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-container">
+                    <input placeholder=" " type="password" id="password">
+                    <label for="password">Password</label>
+                </div>                
+                <div class="toggle-group">
+                    <label class="switch">
+                        <input id="fix-navbar-js" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Remember Me</p>
+                </div>  
+                <div>
+                    <button class="signIn-button">Sign in</button>
+                </div> 
+                <div class="signUp-suggestion">
+                    <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="top-footer">
+            <p>© 2025, made with by <span>Creative Tim</span> for a better web.</p>
+        </div>
+        <div class="bottom-footer">
+            <a href="#">Creative Tim</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">License</a>
+        </div>
+    </footer>
+
+<script src="assets/Js/auth.js"></script>
+</body>
+</html>
