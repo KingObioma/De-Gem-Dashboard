@@ -394,9 +394,6 @@ body.nav-fixed.darkMode nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .sidebar-links li{
   padding: 8px 12px;
