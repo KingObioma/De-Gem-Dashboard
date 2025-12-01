@@ -402,6 +402,7 @@ body.nav-fixed.darkMode nav{
   border-radius: 5px;
   transition: 0.2s;
   line-height: 19.5px;
+  line-height: 19.5px;
 }
 .sidebar-links li:hover{
   background-color: rgba(199, 199, 199, 0.2);
