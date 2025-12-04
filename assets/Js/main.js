@@ -113,7 +113,6 @@ typeDarkBtn.addEventListener("click", () => {
     typeDarkBtn.classList.add("active");
     typeTransBtn.classList.remove("active");
     typeWhiteBtn.classList.remove("active");
-    typeWhiteBtn.classList.remove("active");
     logoImage.src = "assets/images/my-logo-dark.png";
 });
 typeWhiteBtn.addEventListener("click", () => {
