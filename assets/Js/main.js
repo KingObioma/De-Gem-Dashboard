@@ -113,8 +113,6 @@ typeDarkBtn.addEventListener("click", () => {
     typeDarkBtn.classList.add("active");
     typeTransBtn.classList.remove("active");
     typeWhiteBtn.classList.remove("active");
-     typeTransBtn.classList.remove("active");
-    typeWhiteBtn.classList.remove("active");
     logoImage.src = "assets/images/my-logo-dark.png";
 });
 typeWhiteBtn.addEventListener("click", () => {
@@ -177,5 +175,6 @@ function updateSidebarVisibility(){
     }else{
         activeSidebar1.style.display = "inline";
         activeSidebar2.style.display = "none";
+        activeSidebar2.style.display = "inline";
     } 
 }
