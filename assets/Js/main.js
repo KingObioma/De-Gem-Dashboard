@@ -175,6 +175,5 @@ function updateSidebarVisibility(){
     }else{
         activeSidebar1.style.display = "inline";
         activeSidebar2.style.display = "none";
-        activeSidebar2.style.display = "inline";
     } 
 }
