@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickAid Dashboard</title>
+    <title>QuickAid Dashboard - Sign Up</title>
     <link rel="stylesheet" href="assets/css/sign-up.css">
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -24,17 +24,17 @@
                         <rect y="14" width="20" height="2" fill="#555"/>
                     </svg>
                 </button>
-                <button class="close-nav-btn hide" id="close-nav-btn-js">                         
+                <button class="close-nav-btn hide" id="close-nav-btn-js">
                     <span class="close-nav" id="close-nav-js">&times;</span>
                 </button>
-            </div>  
+            </div>
         </section>
         <section class="second-section hide" id="second-section-js">
             <a href="index.html">Dashboard</a>
             <a href="#">Profile</a>
             <a href="sign-up.html">Sign Up</a>
             <a href="sign-in.html">Sign In</a>
-        </section>    
+        </section>
         <section class="third-section">
             <div>
                 <button class="online-builder">
@@ -46,7 +46,7 @@
                     Free download
                 </button>
             </div>
-        </section>     
+        </section>
     </nav>
     <div class="main-body">
         <div class="illustration">
@@ -58,29 +58,31 @@
                 <p>Enter your email and password to register</p>
             </div>
             <div class="form-body">
-                <form action="#">
+                <form action="#" id="signup-form">
+                    <div class="error-message" id="signup-error"></div>
+                    <div class="success-message" id="signup-success"></div>
                     <div class="input-container">
-                        <input placeholder=" " type="text" id="name">
+                        <input placeholder=" " type="text" id="name" required>
                         <label for="name">Name</label>
                     </div>
                     <div class="input-container">
-                        <input placeholder=" " type="email" id="email">
+                        <input placeholder=" " type="email" id="email" required>
                         <label for="email">Email</label>
                     </div>
                     <div class="input-container">
-                        <input placeholder=" " type="password" id="password">
+                        <input placeholder=" " type="password" id="password" required>
                         <label for="password">Password</label>
-                    </div>                
+                    </div>
                     <div class="toggle-group">
                         <label class="switch">
-                            <input id="fix-navbar-js" type="checkbox">
+                            <input id="terms-checkbox" type="checkbox">
                             <span class="slider"></span>
                         </label>
                         <p>I agree the <span class="black">Terms and Conditions</span></p>
-                    </div>  
+                    </div>
                     <div>
-                        <button class="signUp-button">Sign Up</button>
-                    </div> 
+                        <button type="submit" class="signUp-button">Sign Up</button>
+                    </div>
                     <div class="signIn-suggestion">
                         <p>Already have an account? <a href="sign-in.html">Sign in</a></p>
                     </div>

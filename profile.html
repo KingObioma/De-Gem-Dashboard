@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickAid Dashboard</title>
+    <title>Profile - DE GEM Dashboard</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -16,7 +16,7 @@
     <div class="layoutWrapper">
         <nav>
             <section class="first-section">
-                <p>Pages<span class="active"> / Dashboard</span></p>
+                <p>Pages<span class="active"> / Profile</span></p>
             </section>
             <section class="second-section">
                 <div class="input-wrapper">
@@ -52,29 +52,29 @@
                             <rect x="5" y="2" width="20" height="2" fill="#555"/>
                             <rect y="8" width="20" height="2" fill="#555"/>
                             <rect x="5" y="14" width="20" height="2" fill="#555"/>
-                        </svg>                          
+                        </svg>
                     </button>
                 </div>
-            </section>           
+            </section>
         </nav>
         <aside class="sidebar" id="sidebar-js">
             <div class="top-sidebar">
                 <div class="logo-container" id="logo-container-js">
-                    <a href="#"><img src="assets/images/my-logo-dark.png" id="logo-image-js" class="logo-image" width="56px" alt="QuickAid Logo"></a> 
-                    <a href="#"><img src="assets/images/my-logo-dark.png" class="logo-image2" width="26px" alt="QuickAid Logo"></a> 
-                    <a href="#" class="logo-name">              
+                    <a href="index.html"><img src="assets/images/my-logo-dark.png" id="logo-image-js" class="logo-image" width="56px" alt="QuickAid Logo"></a>
+                    <a href="index.html"><img src="assets/images/my-logo-dark.png" class="logo-image2" width="26px" alt="QuickAid Logo"></a>
+                    <a href="index.html" class="logo-name">
                         DE GEM
                     </a>
                 </div>
                  <ul class="sidebar-links">
-          <li id="active-sidebar-js1" class="active-sidebar black"><a href="index.html"><i class="fa-solid fa-table-cells sidebar-icons active"></i>Dashboard</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-table-cells sidebar-icons"></i>Dashboard</a></li>
           <li><a href="orders.html"><i class="fa-regular fa-square-check sidebar-icons"></i> Orders</a></li>
           <li><a href="clients.html"><i class="fa-regular fa-file-lines sidebar-icons"></i> Clients</a></li>
           <li><a href="tailors.html"><i class="fa-solid fa-scissors sidebar-icons"></i> Tailors</a></li>
           <li><a href="collections.html"><i class="fa-solid fa-shirt sidebar-icons"></i> Collections</a></li>
           <li><a href="notifications.html"><i class="fa-regular fa-bell sidebar-icons"></i> Notifications</a></li>
           <p class="section-title" id="section-title-js">ACCOUNT PAGES</p>
-          <li><a href="profile.html"><i class="fa-regular fa-user sidebar-icons"></i> Profile</a></li>
+          <li id="active-sidebar-js1" class="active-sidebar black"><a href="profile.html"><i class="fa-regular fa-user sidebar-icons active"></i> Profile</a></li>
           <li><a href="sign-in.html"><i class="fa-solid fa-right-to-bracket sidebar-icons"></i> Sign In</a></li>
           <li><a href="sign-up.html"><i class="fa-regular fa-clipboard sidebar-icons"></i> Sign Up</a></li>
           <div style="height: 10px;"></div>
@@ -123,21 +123,21 @@
                                 <input id="fix-navbar-js" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                        </div>   
+                        </div>
                         <div class="toggle-group">
                             <p>Light / Dark</p>
                             <label class="switch">
                                 <input id="light-dark-js" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="button-group">
                 <button class="download-btn">Free Download</button>
                 <button class="doc-btn">View documentation</button>
-            </div>        
+            </div>
         </aside>
         <aside class="notification-board" id="notification-board-js">
             <div class="single-notification">
@@ -204,187 +204,80 @@
             </div>
         </aside>
     </div>
-     <div class="dashboard-intro">
-      <h3 class="intro-title">Dashboard</h3>
-      <p class="intro-subtext">Track your orders, clients, and tailor performance across all branches.</p>
+    <div class="dashboard-intro">
+        <h3 class="intro-title">Profile</h3>
+        <p class="intro-subtext">Manage your account settings and personal information.</p>
     </div>
-  <div class="dashboard">
-      <div class="performance-overview">
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">Today’s Revenue</p>
-              <p class="metric-figure">₦530K</p>
+    <div class="dashboard">
+        <div class="activity">
+            <div class="projects profile-card">
+                <div class="profile-header">
+                    <img src="assets/images/team-1.jpg" class="profile-avatar" alt="Profile">
+                    <div class="profile-info">
+                        <h2 class="profile-name">Olumide Fashola</h2>
+                        <p class="profile-role">Administrator / Owner</p>
+                        <p class="profile-location"><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <p class="stat-value">892</p>
+                        <p class="stat-label">Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-value">1,284</p>
+                        <p class="stat-label">Orders</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-value">₦45.2M</p>
+                        <p class="stat-label">Revenue</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-value">4.9</p>
+                        <p class="stat-label">Rating</p>
+                    </div>
+                </div>
             </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-file-lines sidebar-icons"></i>
+            <div class="orders profile-details">
+                <div class="orders-top">
+                    <p class="orders-text">Account Information</p>
+                    <p class="info"><span class="bold-span">Last updated</span> 2 days ago</p>
+                </div>
+                <div class="orders-bottom">
+                    <div class="order-paragraph">
+                        <div class="event-icon blue"><i class="fa-solid fa-envelope"></i></div>
+                        <p class="order-title">olumide@degem.com</p>
+                        <p class="subtitle">Email Address</p>
+                    </div>
+                    <div class="order-paragraph">
+                        <div class="event-icon green bell"><i class="fa-solid fa-phone"></i></div>
+                        <p class="order-title">+234 803 456 7890</p>
+                        <p class="subtitle">Phone Number</p>
+                    </div>
+                    <div class="order-paragraph">
+                        <div class="event-icon orange"><i class="fa-solid fa-building"></i></div>
+                        <p class="order-title">DE GEM Fashion House</p>
+                        <p class="subtitle">Company Name</p>
+                    </div>
+                    <div class="order-paragraph">
+                        <div class="event-icon red"><i class="fa-solid fa-map-marker-alt"></i></div>
+                        <p class="order-title">15 Admiralty Way, Lekki Phase 1, Lagos</p>
+                        <p class="subtitle">Business Address</p>
+                    </div>
+                    <div class="order-paragraph">
+                        <div class="event-icon blue"><i class="fa-solid fa-calendar"></i></div>
+                        <p class="order-title">January 15, 2020</p>
+                        <p class="subtitle">Member Since</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="positive-metric-percentage">+18%</span> than last week</p>
-          </div>
-        </div>
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">New Clients</p>
-              <p class="metric-figure">230</p>
-            </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-user sidebar-icons"></i>
-            </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="positive-metric-percentage">+6%</span> than last week</p>
-          </div>
-        </div>
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">Fittings Scheduled</p>
-              <p class="metric-figure">176</p>
-            </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-clipboard sidebar-icons"></i>
-            </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="negative-metric-percentage">-3%</span> than yesterday</p>
-          </div>
-        </div>
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">Completed Orders</p>
-              <p class="metric-figure">1,042</p>
-            </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-square-check sidebar-icons"></i>
-            </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="positive-metric-percentage">+5%</span> than yesterday</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="charts">
-        <div class="chart-card">
-          <div class="top-card">
-            <p class="chart-text">Website Visits</p>
-            <p class="info">Client engagement stats</p>
-            <div class="chart-container">
-              <canvas id="viewsChart"></canvas>
-            </div>
-          </div>
-          <div class="bottom-card"><i class="fas fa-clock"></i> updated 2 days ago</div>
-        </div>
-        <div class="chart-card">
-          <div class="top-card">
-            <p class="chart-text">Monthly Sales</p>
-            <p class="info"><span class="bold-span">(+12%)</span> increase in total orders</p>
-            <div class="chart-container">
-              <canvas id="salesChart"></canvas>
-            </div>
-          </div>
-          <div class="bottom-card"><i class="fas fa-clock"></i> updated 4 min ago </div>
-        </div>
-        <div class="chart-card">
-          <div class="top-card">
-            <p class="chart-text">Production Progress</p>
-            <p class="info">Tracking ongoing tailoring work</p>
-            <div class="chart-container">
-              <canvas id="tasksChart"></canvas>
-            </div>
-          </div>
-          <div class="bottom-card"><i class="fas fa-clock"></i> just updated</div>
-        </div>
-      </div>
-
-      <div class="activity">
-        <div class="projects">
-          <div class="projects-header">
-            <p class="project-text">Ongoing Projects</p>
-            <p class="info"><span class="bold-span">30 suits</span> tailored this month</p>
-          </div>
-          <div>
-            <table>
-              <tr>
-                <th>Designs</th>
-                <th>Tailors</th>
-                <th>Budget</th>
-                <th>Completion</th>
-              </tr>
-              <tr>
-                <td class="companies">
-                  <img src="assets/images/small-logos/logo-xd.svg" class="table-logo" alt="table-logo">Classic Navy Suit
-                </td>
-                <td>
-                  <img src="assets/images/team-1.jpg" class="team-image" title="Uche" alt="team-1">
-                  <img src="assets/images/team-2.jpg" class="team-image" title="Segun" alt="team-2">
-                </td>
-                <td class="budget">₦140,000</td>
-                <td class="Completion">60%
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill blue" style="width: 60%"></div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="companies">
-                  <img src="assets/images/small-logos/logo-atlassian.svg" class="table-logo" alt="table-logo">Tuxedo Line
-                </td>
-                <td>
-                  <img src="assets/images/team-2.jpg" class="team-image" title="Tunde" alt="team-5">
-                </td>
-                <td class="budget">₦300,000</td>
-                <td class="Completion">25%
-                  <div class="progress-bar">
-                    <div class="progress-bar-fill blue" style="width: 25%"></div>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
         </div>
 
-        <div class="orders">
-          <div class="orders-top">
-            <p class="orders-text">Orders Overview</p>
-            <p class="info"><span class="bold-span">24%</span> more than last month</p>
-          </div>
-          <div class="orders-bottom">
-            <div class="order-paragraph">
-              <div class="event-icon green bell"><i class="fa-solid fa-bell"></i></div>
-              <p class="order-title">₦240,000 — Corporate Suit Order</p>
-              <p class="subtitle">22 DEC 7:20 PM</p>
-            </div>
-            <div class="order-paragraph">
-              <div class="event-icon red"><i class="fa-solid fa-code"></i></div>
-              <p class="order-title">New customer order #1832412</p>
-              <p class="subtitle">21 DEC 11 PM</p>
-            </div>
-            <div class="order-paragraph">
-              <div class="event-icon blue"><i class="fa-solid fa-cart-shopping"></i></div>
-              <p class="order-title">Fabric restock payment</p>
-              <p class="subtitle">21 DEC 9:34 PM</p>
-            </div>
-            <div class="order-paragraph">
-              <div class="event-icon orange"><i class="fa-solid fa-credit-card"></i></div>
-              <p class="order-title">Card payment confirmed #4395133</p>
-              <p class="subtitle">20 DEC 2:20 AM</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div id="settings-icon2-js" class="settings-icon-container"><i class="fa-solid fa-gear"></i></div>
 
-      <div id="settings-icon2-js" class="settings-icon-container">
-        <i class="fa-solid fa-gear"></i>
-      </div>
-
-      <footer>
+        <footer>
         <div class="top-footer">
-          <p>© 2025, designed with passion by <span>DE GEM</span> – redefining men’s luxury wear.</p>
+          <p>© 2025, designed with passion by <span>DE GEM</span> – redefining men's luxury wear.</p>
         </div>
         <div class="bottom-footer">
           <a href="#">DE GEM</a>
@@ -394,8 +287,6 @@
         </div>
       </footer>
     </div>
-<script src="assets/node_modules/chart.js/dist/chart.umd.min.js"></script>
-<script src="assets/Js/chart.js"></script>
 <script src="assets/Js/main.js"></script>
 </body>
 </html>

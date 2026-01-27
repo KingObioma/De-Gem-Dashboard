@@ -134,8 +134,10 @@ typeTransBtn.addEventListener("click", () => {
 fixNavbar.addEventListener("change", () => {
     if (fixNavbar.checked) {
         document.body.classList.add("nav-fixed");
+        localStorage.setItem('degem_navbarFixed', 'true');
     } else {
         document.body.classList.remove("nav-fixed");
+        localStorage.setItem('degem_navbarFixed', 'false');
     }
 });
 lightDarkMode.addEventListener("change", () => {
@@ -143,16 +145,42 @@ lightDarkMode.addEventListener("change", () => {
         document.body.classList.add("darkMode");
         typeDarkBtn.click();
         document.documentElement.style.setProperty("--light-gray", "#eae6e6bb");
+        localStorage.setItem('degem_darkMode', 'true');
     } else {
         document.body.classList.remove("darkMode");
         typeWhiteBtn.click();
         document.documentElement.style.setProperty("--light-gray", "#737373");
+        localStorage.setItem('degem_darkMode', 'false');
     }
     updateSidebarVisibility();
 });
+
+// Apply saved preferences on page load
 window.addEventListener('DOMContentLoaded', () => {
-    fixNavbar.checked = false;
-    lightDarkMode.checked = false;
+    // Apply dark mode preference from localStorage
+    const darkModeEnabled = localStorage.getItem('degem_darkMode') === 'true';
+
+    if (darkModeEnabled) {
+        lightDarkMode.checked = true;
+        document.body.classList.add("darkMode");
+        typeDarkBtn.click();
+        document.documentElement.style.setProperty("--light-gray", "#eae6e6bb");
+    } else {
+        lightDarkMode.checked = false;
+        document.body.classList.remove("darkMode");
+        document.documentElement.style.setProperty("--light-gray", "#737373");
+    }
+
+    // Apply navbar fixed preference from localStorage
+    const navbarFixed = localStorage.getItem('degem_navbarFixed') === 'true';
+    if (navbarFixed) {
+        fixNavbar.checked = true;
+        document.body.classList.add("nav-fixed");
+    } else {
+        fixNavbar.checked = false;
+    }
+
+    updateSidebarVisibility();
 });
 updateSidebarVisibility();
 
