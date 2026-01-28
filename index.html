@@ -39,7 +39,7 @@
                 <div class="nav-icons">
                     <i id="settings-icon-js" class="fa-solid fa-gear"></i>
                     <i id="notification-icon-js" class="fa-regular fa-bell"></i>
-                    <a href="sign-in.html"><i class="fa-regular fa-circle-user"></i></a>
+                    <a href="#" id="user-icon-link"><i class="fa-regular fa-circle-user"></i></a>
                     <button class="hamburger1" id="hamburger1-js">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <rect y="2" width="20" height="2" fill="#555"/>
@@ -52,17 +52,17 @@
                             <rect x="5" y="2" width="20" height="2" fill="#555"/>
                             <rect y="8" width="20" height="2" fill="#555"/>
                             <rect x="5" y="14" width="20" height="2" fill="#555"/>
-                        </svg>                          
+                        </svg>
                     </button>
                 </div>
-            </section>           
+            </section>
         </nav>
         <aside class="sidebar" id="sidebar-js">
             <div class="top-sidebar">
                 <div class="logo-container" id="logo-container-js">
-                    <a href="#"><img src="assets/images/my-logo-dark.png" id="logo-image-js" class="logo-image" width="56px" alt="QuickAid Logo"></a> 
-                    <a href="#"><img src="assets/images/my-logo-dark.png" class="logo-image2" width="26px" alt="QuickAid Logo"></a> 
-                    <a href="#" class="logo-name">              
+                    <a href="#"><img src="assets/images/my-logo-dark.png" id="logo-image-js" class="logo-image" width="56px" alt="QuickAid Logo"></a>
+                    <a href="#"><img src="assets/images/my-logo-dark.png" class="logo-image2" width="26px" alt="QuickAid Logo"></a>
+                    <a href="#" class="logo-name">
                         DE GEM
                     </a>
                 </div>
@@ -123,21 +123,21 @@
                                 <input id="fix-navbar-js" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                        </div>   
+                        </div>
                         <div class="toggle-group">
                             <p>Light / Dark</p>
                             <label class="switch">
                                 <input id="light-dark-js" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="button-group">
                 <button class="download-btn">Free Download</button>
                 <button class="doc-btn">View documentation</button>
-            </div>        
+            </div>
         </aside>
         <aside class="notification-board" id="notification-board-js">
             <div class="single-notification">
@@ -205,39 +205,69 @@
         </aside>
     </div>
      <div class="dashboard-intro">
-      <h3 class="intro-title">Dashboard</h3>
+      <h3 class="intro-title" id="welcome-title">Dashboard</h3>
       <p class="intro-subtext">Track your orders, clients, and tailor performance across all branches.</p>
     </div>
   <div class="dashboard">
+      <!-- Top Row: Quick Stats + Orders Overview side by side -->
+      <div class="top-section">
+        <div class="quick-stats">
+          <div class="metric-card">
+            <div class="top-card">
+              <div class="metric-text">
+                <p class="metric-subtext">Today's Revenue</p>
+                <p class="metric-figure">₦530K</p>
+              </div>
+              <div class="metric-icon">
+                <i class="fa-solid fa-naira-sign sidebar-icons"></i>
+              </div>
+            </div>
+            <div class="bottom-card">
+              <p><span class="positive-metric-percentage">+18%</span> than last week</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="top-card">
+              <div class="metric-text">
+                <p class="metric-subtext">New Clients</p>
+                <p class="metric-figure">230</p>
+              </div>
+              <div class="metric-icon">
+                <i class="fa-regular fa-user sidebar-icons"></i>
+              </div>
+            </div>
+            <div class="bottom-card">
+              <p><span class="positive-metric-percentage">+6%</span> than last week</p>
+            </div>
+          </div>
+        </div>
+        <div class="orders-overview-card">
+          <div class="orders-top">
+            <p class="orders-text">Orders Overview</p>
+            <p class="info"><span class="bold-span">24%</span> more than last month</p>
+          </div>
+          <div class="orders-bottom">
+            <div class="order-paragraph">
+              <div class="event-icon green bell"><i class="fa-solid fa-bell"></i></div>
+              <p class="order-title">₦240,000 — Corporate Suit Order</p>
+              <p class="subtitle">22 DEC 7:20 PM</p>
+            </div>
+            <div class="order-paragraph">
+              <div class="event-icon red"><i class="fa-solid fa-code"></i></div>
+              <p class="order-title">New customer order #1832412</p>
+              <p class="subtitle">21 DEC 11 PM</p>
+            </div>
+            <div class="order-paragraph">
+              <div class="event-icon blue"><i class="fa-solid fa-cart-shopping"></i></div>
+              <p class="order-title">Fabric restock payment</p>
+              <p class="subtitle">21 DEC 9:34 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row: More metrics -->
       <div class="performance-overview">
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">Today’s Revenue</p>
-              <p class="metric-figure">₦530K</p>
-            </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-file-lines sidebar-icons"></i>
-            </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="positive-metric-percentage">+18%</span> than last week</p>
-          </div>
-        </div>
-        <div class="metric-card">
-          <div class="top-card">
-            <div class="metric-text">
-              <p class="metric-subtext">New Clients</p>
-              <p class="metric-figure">230</p>
-            </div>
-            <div class="metric-icon">
-              <i class="fa-regular fa-user sidebar-icons"></i>
-            </div>
-          </div>
-          <div class="bottom-card">
-            <p><span class="positive-metric-percentage">+6%</span> than last week</p>
-          </div>
-        </div>
         <div class="metric-card">
           <div class="top-card">
             <div class="metric-text">
@@ -245,7 +275,7 @@
               <p class="metric-figure">176</p>
             </div>
             <div class="metric-icon">
-              <i class="fa-regular fa-clipboard sidebar-icons"></i>
+              <i class="fa-regular fa-calendar sidebar-icons"></i>
             </div>
           </div>
           <div class="bottom-card">
@@ -266,8 +296,37 @@
             <p><span class="positive-metric-percentage">+5%</span> than yesterday</p>
           </div>
         </div>
+        <div class="metric-card">
+          <div class="top-card">
+            <div class="metric-text">
+              <p class="metric-subtext">Pending Deliveries</p>
+              <p class="metric-figure">48</p>
+            </div>
+            <div class="metric-icon">
+              <i class="fa-solid fa-truck sidebar-icons"></i>
+            </div>
+          </div>
+          <div class="bottom-card">
+            <p><span class="positive-metric-percentage">+2%</span> than last week</p>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="top-card">
+            <div class="metric-text">
+              <p class="metric-subtext">Active Tailors</p>
+              <p class="metric-figure">12</p>
+            </div>
+            <div class="metric-icon">
+              <i class="fa-solid fa-scissors sidebar-icons"></i>
+            </div>
+          </div>
+          <div class="bottom-card">
+            <p><span class="positive-metric-percentage">+1</span> new this week</p>
+          </div>
+        </div>
       </div>
 
+      <!-- Charts Section -->
       <div class="charts">
         <div class="chart-card">
           <div class="top-card">
@@ -301,6 +360,7 @@
         </div>
       </div>
 
+      <!-- Projects Section -->
       <div class="activity">
         <div class="projects">
           <div class="projects-header">
@@ -344,35 +404,51 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td class="companies">
+                  <img src="assets/images/small-logos/logo-slack.svg" class="table-logo" alt="table-logo">Wedding Collection
+                </td>
+                <td>
+                  <img src="assets/images/team-1.jpg" class="team-image" title="Ada" alt="team-3">
+                  <img src="assets/images/team-2.jpg" class="team-image" title="Femi" alt="team-4">
+                  <img src="assets/images/team-1.jpg" class="team-image" title="Kola" alt="team-6">
+                </td>
+                <td class="budget">₦520,000</td>
+                <td class="Completion">85%
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill green" style="width: 85%"></div>
+                  </div>
+                </td>
+              </tr>
             </table>
           </div>
         </div>
 
         <div class="orders">
           <div class="orders-top">
-            <p class="orders-text">Orders Overview</p>
-            <p class="info"><span class="bold-span">24%</span> more than last month</p>
+            <p class="orders-text">Recent Activity</p>
+            <p class="info"><span class="bold-span">8 actions</span> in the last hour</p>
           </div>
           <div class="orders-bottom">
-            <div class="order-paragraph">
-              <div class="event-icon green bell"><i class="fa-solid fa-bell"></i></div>
-              <p class="order-title">₦240,000 — Corporate Suit Order</p>
-              <p class="subtitle">22 DEC 7:20 PM</p>
-            </div>
-            <div class="order-paragraph">
-              <div class="event-icon red"><i class="fa-solid fa-code"></i></div>
-              <p class="order-title">New customer order #1832412</p>
-              <p class="subtitle">21 DEC 11 PM</p>
-            </div>
-            <div class="order-paragraph">
-              <div class="event-icon blue"><i class="fa-solid fa-cart-shopping"></i></div>
-              <p class="order-title">Fabric restock payment</p>
-              <p class="subtitle">21 DEC 9:34 PM</p>
-            </div>
             <div class="order-paragraph">
               <div class="event-icon orange"><i class="fa-solid fa-credit-card"></i></div>
               <p class="order-title">Card payment confirmed #4395133</p>
               <p class="subtitle">20 DEC 2:20 AM</p>
+            </div>
+            <div class="order-paragraph">
+              <div class="event-icon green bell"><i class="fa-solid fa-check"></i></div>
+              <p class="order-title">Order #1832410 completed</p>
+              <p class="subtitle">20 DEC 1:45 AM</p>
+            </div>
+            <div class="order-paragraph">
+              <div class="event-icon blue"><i class="fa-solid fa-user-plus"></i></div>
+              <p class="order-title">New client registration</p>
+              <p class="subtitle">19 DEC 11:30 PM</p>
+            </div>
+            <div class="order-paragraph">
+              <div class="event-icon pink"><i class="fa-solid fa-scissors"></i></div>
+              <p class="order-title">Fitting session scheduled</p>
+              <p class="subtitle">19 DEC 10:15 PM</p>
             </div>
           </div>
         </div>
@@ -384,7 +460,7 @@
 
       <footer>
         <div class="top-footer">
-          <p>© 2025, designed with passion by <span>DE GEM</span> – redefining men’s luxury wear.</p>
+          <p>© 2025, designed with passion by <span>DE GEM</span> – redefining men's luxury wear.</p>
         </div>
         <div class="bottom-footer">
           <a href="#">DE GEM</a>
@@ -397,5 +473,32 @@
 <script src="assets/node_modules/chart.js/dist/chart.umd.min.js"></script>
 <script src="assets/Js/chart.js"></script>
 <script src="assets/Js/main.js"></script>
+<script>
+// Update welcome message if user is logged in
+document.addEventListener('DOMContentLoaded', function() {
+    const welcomeTitle = document.getElementById('welcome-title');
+    const userIconLink = document.getElementById('user-icon-link');
+
+    // Check for logged in user
+    let currentUser = sessionStorage.getItem('degem_current_user');
+    if (!currentUser) {
+        currentUser = localStorage.getItem('degem_current_user');
+    }
+
+    if (currentUser) {
+        const user = JSON.parse(currentUser);
+        if (welcomeTitle && user.name) {
+            welcomeTitle.textContent = `Welcome back, ${user.name}!`;
+        }
+        if (userIconLink) {
+            userIconLink.href = 'profile.html';
+        }
+    } else {
+        if (userIconLink) {
+            userIconLink.href = 'sign-in.html';
+        }
+    }
+});
+</script>
 </body>
 </html>
