@@ -117,14 +117,14 @@ body.nav-fixed.darkMode nav{
   pointer-events: none;
 }
 .input-wrapper input:focus{
-  border: 2px solid #e91e63;
+  border: 2px solid #344767;
   outline: none;
   transition: 0.15ms;
   border-radius: 5px;
   box-shadow: none;
 }
 .input-wrapper input:focus + label{
-  color: #e91e63;
+  color: #344767;
   top: -12%;
   left: 7%;
   font-size: 12px;
@@ -926,13 +926,13 @@ body.darkMode .first-section .active{
 }
 body.darkMode .input-wrapper input:focus + label{
   background-color: #171717;
-  color: rgba(255, 255, 255, 0.8);
+  color: #49a3f1;
 }
 body.darkMode .input-wrapper input{
   border-color: rgba(255, 255, 255, 0.04);
 }
 body.darkMode .input-wrapper input:focus{
-  border-color: #e91e63;
+  border-color: #49a3f1;
 }
 body.darkMode .github-button{
   color: black;

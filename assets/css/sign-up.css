@@ -53,16 +53,19 @@ p{
   gap: 10px;
 }
 .online-builder{
-  border: 1px solid #e91e63;
+  border: 1px solid #344767;
   border-radius: 10px;
   background-color: transparent;
-  color: #e91e63;
+  color: #344767;
   font-size: 12px;
   padding: 8px 15px;
   cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 .online-builder:hover{
-  opacity: 0.8;
+  background-color: #344767;
+  color: white;
 }
 .free-download{
   border: none;
@@ -158,7 +161,7 @@ form input{
   border: 1px solid #d2d6da;
 }
 form input:focus{
-  border: 2px solid #e91e63;
+  border: 2px solid #344767;
   outline: none;
 }
 form input:focus + label,
@@ -166,7 +169,7 @@ form input:not(:placeholder-shown) + label {
   top: -8px;
   font-size: 12px;
   padding: 0px 5px;
-  color: #e91e63;
+  color: #344767;
   background-color: white;
 }
 .input-container{
@@ -216,7 +219,7 @@ form input:not(:placeholder-shown) + label {
   height: 18px; width: 18px;
 }
 .switch input:checked + .slider {
-  background-color: #e91e63;
+  background-color: #344767;
 }
 .switch input:checked + .slider::before {
   transform: translatex(18px);
@@ -243,7 +246,7 @@ form input:not(:placeholder-shown) + label {
 }
 .signIn-suggestion a{
   font-weight: 600;
-  color: #e91e63;
+  color: #344767;
   text-decoration: none;
 }
 .signIn-suggestion p{
@@ -320,7 +323,7 @@ body.darkMode .input-container label{
 body.darkMode form input:focus + label,
 body.darkMode form input:not(:placeholder-shown) + label{
   background-color: #1d1d1d;
-  color: #e91e63;
+  color: #49a3f1;
 }
 body.darkMode .toggle-group p{
   color: rgba(255, 255, 255, 0.7);
@@ -344,8 +347,21 @@ body.darkMode .close-nav-btn{
   border-color: rgba(255, 255, 255, 0.2);
 }
 body.darkMode .online-builder{
-  border-color: #e91e63;
-  color: #e91e63;
+  border-color: #49a3f1;
+  color: #49a3f1;
+}
+body.darkMode .online-builder:hover{
+  background-color: #49a3f1;
+  color: white;
+}
+body.darkMode .signIn-suggestion a{
+  color: #49a3f1;
+}
+body.darkMode .switch input:checked + .slider {
+  background-color: #49a3f1;
+}
+body.darkMode form input:focus{
+  border-color: #49a3f1;
 }
 body.darkMode .free-download{
   background-color: #323a54;
