@@ -132,12 +132,26 @@ body.nav-fixed.darkMode nav{
   padding: 0px 5px;
 }
 .online-builder{
-  border: 1px solid #e91e63;
+  border: 1px solid #344767;
   border-radius: 10px;
   background-color: transparent;
-  color: #e91e63;
+  color: #344767;
   padding: 8px 15px;
   cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.online-builder:hover{
+  background-color: #344767;
+  color: white;
+}
+body.darkMode .online-builder{
+  border-color: #49a3f1;
+  color: #49a3f1;
+}
+body.darkMode .online-builder:hover{
+  background-color: #49a3f1;
+  color: white;
 }
 .github-button{
   display: flex;
@@ -1406,6 +1420,83 @@ body.darkMode .profile-stats {
   }
   .stat-item {
     flex: 1 1 40%;
+  }
+}
+
+/* Authentication State Styles */
+.auth-hidden {
+  display: none !important;
+}
+
+/* Logout Button Styles */
+.logout-btn {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+}
+.logout-btn:hover {
+  background-color: rgba(199, 199, 199, 0.2);
+}
+.sidebar.dark .logout-btn {
+  color: white;
+}
+body.darkMode .sidebar.trans .logout-btn {
+  color: white;
+}
+
+/* Measurements Button (replaces Reviews) */
+.measurements-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d9e0;
+  border-radius: 4px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.measurements-label {
+  background-color: #e5eaee;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+.measurements-label:hover {
+  background-color: #e5eaee98;
+}
+.measurements-label i {
+  font-size: 14px;
+  line-height: 16px;
+  color: #25292e;
+  margin-right: 5px;
+}
+.measurements-count {
+  border-left: 1px solid #d1d9e0;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  background-color: white;
+}
+body.darkMode .measurements-button {
+  color: black;
+}
+body.darkMode .measurements-label:hover {
+  background-color: #e5eaeee7;
+}
+
+@media (max-width: 835px) {
+  .measurements-button {
+    display: none;
   }
 }
 

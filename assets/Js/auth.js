@@ -256,3 +256,96 @@ applyDarkModePreference();
 document.addEventListener('DOMContentLoaded', function() {
     applyDarkModePreference();
 });
+
+// ========================================
+// Authentication State Management
+// ========================================
+
+// Protected pages that require authentication
+const protectedPages = ['index.html', 'orders.html', 'clients.html', 'tailors.html', 'collections.html', 'notifications.html', 'profile.html', 'degem.html'];
+
+// Auth pages that logged-in users should not access
+const authPages = ['sign-in.html', 'sign-up.html'];
+
+// Get current page name
+function getCurrentPage() {
+    const path = window.location.pathname;
+    const page = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
+    return page;
+}
+
+// Check if user is on a protected page
+function isProtectedPage() {
+    const currentPage = getCurrentPage();
+    return protectedPages.some(page => currentPage === page || currentPage === '' && page === 'index.html');
+}
+
+// Check if user is on an auth page
+function isAuthPage() {
+    const currentPage = getCurrentPage();
+    return authPages.includes(currentPage);
+}
+
+// Update sidebar navigation based on auth state
+function updateSidebarAuth() {
+    const user = getCurrentUser();
+    const signInLinks = document.querySelectorAll('.signin-link');
+    const signUpLinks = document.querySelectorAll('.signup-link');
+    const profileLinks = document.querySelectorAll('.profile-link');
+    const logoutBtns = document.querySelectorAll('.logout-container');
+
+    if (user) {
+        // User is logged in
+        signInLinks.forEach(el => el.classList.add('auth-hidden'));
+        signUpLinks.forEach(el => el.classList.add('auth-hidden'));
+        profileLinks.forEach(el => el.classList.remove('auth-hidden'));
+        logoutBtns.forEach(el => el.classList.remove('auth-hidden'));
+    } else {
+        // User is logged out
+        signInLinks.forEach(el => el.classList.remove('auth-hidden'));
+        signUpLinks.forEach(el => el.classList.remove('auth-hidden'));
+        profileLinks.forEach(el => el.classList.add('auth-hidden'));
+        logoutBtns.forEach(el => el.classList.add('auth-hidden'));
+    }
+}
+
+// Handle logout
+function handleLogout() {
+    logoutUser();
+    window.location.href = 'sign-in.html';
+}
+
+// Protect routes - redirect unauthenticated users
+function protectRoutes() {
+    const user = getCurrentUser();
+    const currentPage = getCurrentPage();
+
+    // If on protected page without auth, redirect to sign in
+    if (isProtectedPage() && !user) {
+        window.location.href = 'sign-in.html';
+        return;
+    }
+
+    // If on auth page while logged in, redirect to dashboard
+    if (isAuthPage() && user) {
+        window.location.href = 'index.html';
+        return;
+    }
+}
+
+// Initialize auth state on page load
+function initAuthState() {
+    // Protect routes first
+    protectRoutes();
+
+    // Update sidebar navigation
+    updateSidebarAuth();
+
+    // Add logout event listeners
+    document.querySelectorAll('.logout-btn').forEach(btn => {
+        btn.addEventListener('click', handleLogout);
+    });
+}
+
+// Run auth initialization when DOM is ready
+document.addEventListener('DOMContentLoaded', initAuthState);
