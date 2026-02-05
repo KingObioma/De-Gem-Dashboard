@@ -16,7 +16,7 @@ if (hamburger && closeNavBtn && secondSection) {
         secondSection.classList.add("hide");
         closeNavBtn.classList.add("hide");
         hamburger.classList.remove("hide");
-        hamburger.classList.add("show");
+        hamburger.classList("show");
     });
 }
 
