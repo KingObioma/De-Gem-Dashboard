@@ -27,6 +27,7 @@ if (hamburger && closeNavBtn && secondSection) {
 function getRegisteredUsers() {
     const users = localStorage.getItem('degem_users');
     return users ? JSON.parse(users) : [];
+    return users ? JSON.parse(userdegems) : [];
 }
 
 // Utility function to save users to localStorage
