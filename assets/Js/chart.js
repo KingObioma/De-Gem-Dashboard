@@ -6,7 +6,7 @@ new Chart(viewsCtx, {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
         datasets: [{
             label: 'Views',
-            data: [50, 45, 20, 30, 50, 60, 80],
+            data: [50, 5, 20, 30, 50, 60, 80],
             backgroundColor: '#129f16',
             borderRadius: 3
         }]
