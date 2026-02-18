@@ -36,7 +36,7 @@ new Chart(salesCtx, {
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-            y: { beginAtZero: false, ticks: { stepSize: 100 } }
+            y: { beginAtZero: true, ticks: { stepSize: 100 } }
         }
     }
 });
