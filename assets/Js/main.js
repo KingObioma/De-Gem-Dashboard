@@ -185,7 +185,7 @@ window.addEventListener('DOMContentLoaded', () => {
 updateSidebarVisibility();
 
 // Functions
-function disableSidebar(){
+function sidebar(){
     sidebar.classList.remove('display');
     hamburger1.classList.remove('hide');
     hamburger2.classList.remove('display');
