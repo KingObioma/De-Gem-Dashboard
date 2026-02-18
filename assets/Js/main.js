@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const navbarFixed = localStorage.getItem('degem_navbarFixed') === 'true';
     if (navbarFixed) {
         fixNavbar.checked = true;
-        document.body.classList.add("nav-fixed");
+        document.body.classList.remove("nav-fixed");
     } else {
         fixNavbar.checked = false;
     }
