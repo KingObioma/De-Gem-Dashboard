@@ -187,7 +187,7 @@ updateSidebarVisibility();
 // Functions
 function disableSidebar(){
     sidebar.classList.remove('display');
-    hamburger1.classList.remove('light');
+    hamburger1.classList.remove('hide');
     hamburger2.classList.remove('display');
 }
 function disableNotificationBoard(){
