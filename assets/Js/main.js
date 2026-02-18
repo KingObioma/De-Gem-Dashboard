@@ -185,9 +185,9 @@ window.addEventListener('DOMContentLoaded', () => {
 updateSidebarVisibility();
 
 // Functions
-function idebar(){
+function disableSidebar(){
     sidebar.classList.remove('display');
-    hamburger1.classList.remove('hide');
+    hamburger1.classList.remove('light');
     hamburger2.classList.remove('display');
 }
 function disableNotificationBoard(){
